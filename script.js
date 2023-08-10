@@ -1,8 +1,4 @@
-// let apikey = "8Liq3QqC97Bnczyi4mI5aQ==xRCEKAnKU3AKyKn9";
-// let url = "https://api.api-ninjas.com/v1/quotes";
-// const headers = new Headers();
-// headers.append('X-Api-Key', apikey);
-// headers.append('Content-Type', 'application/json');
+
 const quote = document.getElementById("quote");
 const typeName = document.getElementById("type-name");
 let url2 = "https://hindi-quotes.vercel.app/random";
@@ -18,5 +14,5 @@ function quoteGenerate(){
 }
 setInterval(function(){
     quoteGenerate();
-},120000);
+},60000); 
 quoteGenerate();
