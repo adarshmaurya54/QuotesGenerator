@@ -39,7 +39,7 @@ body::before{
     position: relative;
     color: rgba(255, 255, 255, 0.829);
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 20px;
     z-index: 2;
     width: 90%;
     max-width: 400px;
@@ -57,7 +57,7 @@ body::before{
     font-size: 0.8em;
 }
 .card i{
-    font-size: 2em;
+    font-size: 3em;
 }
 .card #quote{
     margin: 10px 0;
@@ -84,4 +84,30 @@ body::before{
     text-transform: capitalize;
     font-weight: 100;
     letter-spacing: 1px;
+}
+#music-player{
+    border-radius: 2px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 50%;
+    height: 5px;
+    background-color: white;
+}
+#timmer{
+    border-radius: 2px;
+    width: 0%;
+    height: 5px;
+    position: relative!important;
+    background-color: rgb(0, 153, 255);
+    box-shadow: 0 0 20px rgb(0, 89, 255);
+    animation:increase 120s linear infinite;
+}
+@keyframes increase {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
