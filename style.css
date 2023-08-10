@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b232b;
+    height: 100vh;
+    width: 100%;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(22, 159, 218),rgb(102, 8, 74));
+    clip-path: circle(50% at 80% 20%);
+}
+body::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(3, 76, 107),rgb(180, 25, 77));
+    clip-path: circle(40% at 10% 90%);
+}
+.card{
+    /* display: none; */
+    position: relative;
+    color: rgba(255, 255, 255, 0.829);
+    text-align: center;
+    padding: 100px 0;
+    z-index: 2;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.17);
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+.name{
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+}
+.card i{
+    font-size: 2em;
+}
+.card #quote{
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+.other-info{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Writter,.categroy{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.type{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'Lobster', cursive;
+}
+.type span{
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
