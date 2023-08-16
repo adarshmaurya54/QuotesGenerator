@@ -14,5 +14,5 @@ function quoteGenerate(){
 }
 setInterval(function(){
     quoteGenerate();
-},60000); 
+},30000); 
 quoteGenerate();
